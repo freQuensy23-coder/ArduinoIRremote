@@ -1,0 +1,15 @@
+{
+  "Sound_on": "HEX",
+  "Sound_off": "HEX",
+  "Sound_+": "HEX",
+  "Sound_-": "HEX",
+
+  "Pause": "HEX",
+  "Next": "HEX",
+  "Prev": "HEX",
+
+  "Alt": "HEX",
+  "Shift+Alt": "HEX",
+
+  "Turn_off": "HEX"
+}
