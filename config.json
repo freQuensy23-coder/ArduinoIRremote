@@ -1,12 +1,12 @@
 {
-  "Sound_on": "HEX",
-  "Sound_off": "HEX",
-  "Sound_+": "HEX",
-  "Sound_-": "HEX",
+  "Sound_on": "E0E0F00F",
+  "Sound_+": "E0E0E01F",
+  "Sound_-": "E0E0E02F",
 
-  "Pause": "HEX",
-  "Next": "HEX",
-  "Prev": "HEX",
+  "Pause": "C3EC9D0A",
+  "Next": "E0E048B7",
+  "Prev": "E0E008F7",
+  "Enter": "E0E008F7",
 
   "numbers": ["HEX", "HEX","HEX", "HEX", "HEX", "HEX","HEX", "HEX", "HEX"],
 

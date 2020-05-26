@@ -1,5 +1,5 @@
 import json
-
+import serial
 
 def read_from_json(filename):
     with open(filename) as f:
@@ -11,9 +11,10 @@ def read_from_json(filename):
 
 def main():
     keys = read_from_json("config.json") #Считываем номера клавиш из дсон хранилища
-                                         #TODO: (Alex) Добавить в дсон все клавиши как в картикне
-
+                                         #TODO: (Alex) Добавить в жсон все клавиши как в картикне пульта
     print(keys)
+                                         # TODO: (Alex) Сделать считывание с сериал порта
+
 
 if __name__ == '__main__':
     main()
