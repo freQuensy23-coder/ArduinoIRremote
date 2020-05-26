@@ -8,8 +8,9 @@
   "Next": "HEX",
   "Prev": "HEX",
 
-  "Alt": "HEX",
-  "Shift+Alt": "HEX",
+  "numbers": ["HEX", "HEX","HEX", "HEX", "HEX", "HEX","HEX", "HEX", "HEX"],
+
+  "Colored button": ["HEX","HEX","HEX","HEX"],
 
   "Turn_off": "HEX"
 }
