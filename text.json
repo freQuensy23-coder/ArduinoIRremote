@@ -1,3 +1,16 @@
 {
-  ""
+  "EN":
+  {
+    "input_com_port": "Please, import com port",
+    "no_command_found": "received but not processed",
+    "command":"command",
+    "means": "means",
+    "Sound_on": "Turn sound on/off",
+    "Sound_+": "Louder",
+    "Sound_-": "Quiet",
+    "Pause": "pause (space)",
+    "Next": "Next (Alt)",
+    "Prev": "previous (Shift + Alt)",
+    "Enter": "Enter"
+  }
 }
