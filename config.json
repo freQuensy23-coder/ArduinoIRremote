@@ -3,14 +3,14 @@
   "Sound_+": "E0E0E01F",
   "Sound_-": "E0E0E02F",
 
-  "Pause": "C3EC9D0A",
-  "Next": "E0E048B7",
-  "Prev": "E0E008F7",
-  "Enter": "E0E008F7",
+  "Pause": "E0E0E21D",
+  "Next": "E0E012ED",
+  "Prev": "E0E0A25D",
+  "Enter": "E0E016E9",
 
-  "numbers": ["HEX", "HEX","HEX", "HEX", "HEX", "HEX","HEX", "HEX", "HEX"],
+  "Numbers": ["E0E08877", "E0E020DF","E0E0A05F", "E0E0609F", "E0E010EF", "E0E0906F","E0E030CF", "E0E0B04F", "E0E0708F"],
 
-  "Colored button": ["HEX","HEX","HEX","HEX"],
+  "Colored button": ["E0E036C9","E0E028D7","E0E0A857","E0E06897"],
 
-  "Turn_off": "HEX"
+  "Turn_off": "E0E040BF"
 }
