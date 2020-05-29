@@ -10,10 +10,15 @@
 
   "Numbers": ["E0E08877", "E0E020DF","E0E0A05F", "E0E0609F", "E0E010EF", "E0E0906F","E0E030CF", "E0E0B04F", "E0E0708F"],
 
-  "Colored button": ["E0E036C9","E0E028D7","E0E0A857","E0E06897"],
 
   "up/down": ["E0E006F9", "E0E08679"],
   "left/right":["E0E0A659", "E0E046B9"],
+  "click": "E0E016E9",
+
+  "scroll": ["E0E048B7", "E0E008F7"],
 
   "Turn_off": "E0E040BF"
+
+
+
 }

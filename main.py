@@ -4,14 +4,13 @@ import serial
 import sys
 import time
 import pyautogui
-import asyncio
 
 SPEED = 9600  #Serial port speed
 USB_PORT = 'COM8'
 KEYS_CONFIG_FILENAME = "config.json"
 TRANSLATION_CONFIG_FILENAME = "text.json"
+SCROLL_SPEED = 250
 
-scrol = 0 #-1 - down +1  up
 
 def switch(bool):
     if bool == True:
@@ -60,22 +59,11 @@ def press_enter():
     pyautogui.typewrite('\n')
 
 
-def click_mouse():
-    pyautogui.leftClick()
-
-def change_scroll(up):
-    global scrol
-    print ("up", up)
-    if (up == True):
-        if (scrol == 1) or (scrol == -1):
-            scrol = 0
-        else:
-            scrol = 1
-    else:
-        if (scrol == 1) or (scrol == -1):
-            scrol = 0
-        else:
-            scrol = -1
+def scroll(direction):
+    if direction == 1:
+        pyautogui.scroll(SCROLL_SPEED)
+    if direction == 1:
+        pyautogui.scroll(-SCROLL_SPEED)
 
 def main():
     hexs =  get_keys_hex() # Считываем номера клавиш из дсон хранилища
@@ -85,22 +73,18 @@ def main():
     while True:
         str = ser.readline().decode("utf-8")
         str = (str.replace("\n", ""))
-        try:
+        print(str)
+        if True:
             func, num = get_function(hexs, str)
-        except:
-            func, num = None, None
-        if (func != None):
-            if func == "up/down":
-                print("up/down")
-                change_scroll(-num*2+1)
 
-        if (scrol > 0):
-            pyautogui.scroll(200)
-            print("scrol up")
-        elif (scrol < 0):
-            pyautogui.scroll(-200)
-            print("scrol down")
-        print(scrol)
+            if (func != None):
+                print(func)
+                if func == "scroll":
+                    scroll(-num*2+1)
+                if func == "click":
+                    pyautogui.leftClick
+        # except:
+        #     pass
 
 
 
