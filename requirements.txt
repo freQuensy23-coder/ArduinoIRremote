@@ -1,7 +1,7 @@
 cffi==1.14.0
 comtypes==1.1.7
 darr==0.2.2
-numpy==1.18.4
+numpy==1.22.0
 pycparser==2.20
 pyserial==3.4
 pywin32==227
